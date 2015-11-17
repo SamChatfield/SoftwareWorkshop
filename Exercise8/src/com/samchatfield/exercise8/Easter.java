@@ -19,6 +19,11 @@ public class Easter {
         return day + "/" + month + "/" + year;
     }
 
+    /**
+     * Use the Anonymous Gregorian Algorithm to calculate the day and month of easter given the year
+     *
+     * @param y year
+     */
     public void calcEaster(int y) {
         int a = y % 19;
         int b = (int) Math.floor(y / 100);
