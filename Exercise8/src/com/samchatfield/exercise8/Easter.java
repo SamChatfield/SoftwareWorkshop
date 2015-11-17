@@ -10,6 +10,11 @@ public class Easter {
     private int day, month, year;
     private Date easter;
 
+    /**
+     * Calculate the date on which easter falls in the given year
+     *
+     * @param year year
+     */
     public Easter(int year) {
         this.year = year;
         calcEaster(year);
