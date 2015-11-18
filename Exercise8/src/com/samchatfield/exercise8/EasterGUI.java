@@ -3,6 +3,8 @@ package com.samchatfield.exercise8;
 import javax.swing.JFrame;
 
 /**
+ * The main class of the Easter calculator containing the frame used to display the outputs and inputs
+ *
  * Created by Sam on 18/11/2015.
  */
 public class EasterGUI {

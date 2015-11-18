@@ -3,6 +3,8 @@ package com.samchatfield.exercise8;
 import java.util.Date;
 
 /**
+ * Class containing the logic of the Easter calculator
+ *
  * Created by Sam on 17/11/2015.
  */
 public class Easter {
@@ -20,6 +22,11 @@ public class Easter {
         calcEaster(year);
     }
 
+    /**
+     * A temporary method created to test in the command line for question 1
+     *
+     * @return string representation of the date calculated
+     */
     public String toString() {
         return day + "/" + month + "/" + year;
     }
@@ -46,19 +53,35 @@ public class Easter {
         day = ((h + l - 7 * m + 114) % 31) + 1;
     }
 
-
+    /**
+     * Return the day
+     *
+     * @return day
+     */
     public int getDay() {
         return day;
     }
 
+    /**
+     * Return an integer representation of the month
+     * @return month
+     */
     public int getMonth() {
         return month;
     }
 
+    /**
+     * Return the year
+     * @return year
+     */
     public int getYear() {
         return year;
     }
 
+    /**
+     * Set the current year and call the calculation to update the day and month
+     * @param year new year to calculate the date of easter for
+     */
     public void setYear(int year) {
         this.year = year;
         calcEaster(year);
