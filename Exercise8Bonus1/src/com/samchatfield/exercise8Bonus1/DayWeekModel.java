@@ -18,12 +18,20 @@ public class DayWeekModel extends Observable {
         return dayWeek.getDay();
     }
 
+    public String getDayOfWeek() {
+        return dayWeek.getDayOfWeek();
+    }
+
     public int getMonth() {
         return dayWeek.getMonth();
     }
 
     public int getYear() {
         return dayWeek.getYear();
+    }
+
+    public int getDayMax() {
+        return dayWeek.getDayMax();
     }
 
     public void setDay(int day) {

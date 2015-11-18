@@ -8,11 +8,15 @@ import javax.swing.*;
 public class DayWeekGUI {
 
     public static void main(String[] args) {
-        JFrame frame = new JFrame("Day of the Week Calculator");
-        frame.setSize(300, 300);
+        JFrame frame = new JFrame("Day of Week Calculator");
+        frame.setSize(500, 200);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
 
+        DayWeek dayWeek = new DayWeek(18, 11, 2015);
+        DayWeekComponent dayWeekComponent = new DayWeekComponent(dayWeek);
+
+        frame.add(dayWeekComponent);
         frame.setVisible(true);
     }
 

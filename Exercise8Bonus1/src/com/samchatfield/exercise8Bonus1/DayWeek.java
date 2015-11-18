@@ -1,6 +1,7 @@
 package com.samchatfield.exercise8Bonus1;
 
 import java.time.DayOfWeek;
+import java.time.Month;
 import java.time.format.TextStyle;
 import java.util.Locale;
 
@@ -9,14 +10,15 @@ import java.util.Locale;
  */
 public class DayWeek {
 
-    private int day, month, year;
-    private String dayofWeek;
+    private int day, month, year, dayMax;
+    private String dayOfWeek;
 
     public DayWeek(int day, int month, int year) {
         this.day = day;
         this.month = month;
         this.year = year;
-        dayofWeek = calcGregorian(day, month, year);
+        this.dayMax = calcDayMax(month);
+        dayOfWeek = calcGregorian(day, month, year);
     }
 
     // TODO write javadoc for algorithm
@@ -72,8 +74,16 @@ public class DayWeek {
         return DayOfWeek.of(day).getDisplayName(TextStyle.FULL, Locale.ENGLISH);
     }
 
+    public int calcDayMax(int month) {
+        return Month.of(month).maxLength();
+    }
+
     public int getDay() {
         return day;
+    }
+
+    public String getDayOfWeek() {
+        return dayOfWeek;
     }
 
     public int getMonth() {
@@ -84,24 +94,24 @@ public class DayWeek {
         return year;
     }
 
+    public int getDayMax() {
+        return dayMax;
+    }
+
     public void setDay(int day) {
         this.day = day;
-        dayofWeek = calcGregorian(day, month, year);
+        dayOfWeek = calcGregorian(day, month, year);
     }
 
     public void setMonth(int month) {
         this.month = month;
-        dayofWeek = calcGregorian(day, month, year);
+        dayOfWeek = calcGregorian(day, month, year);
+        dayMax = calcDayMax(month);
     }
 
     public void setYear(int year) {
         this.year = year;
-        dayofWeek = calcGregorian(day, month, year);
-    }
-
-    @Override
-    public String toString() {
-        return day + "/" + month + "/" + year + " falls on a " + dayofWeek;
+        dayOfWeek = calcGregorian(day, month, year);
     }
 
 }
