@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a56baf16-0fa3-45bb-b620-e614d0190e6c" name="Default" comment="Working Zeller's algorithm for Gregorian calendar on command line.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DaySlider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/production/Exercise8/com/samchatfield/exercise8/Easter.class" afterPath="$PROJECT_DIR$/bin/production/Exercise8/com/samchatfield/exercise8/Easter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/production/Exercise8/com/samchatfield/exercise8/EasterModel.class" afterPath="$PROJECT_DIR$/bin/production/Exercise8/com/samchatfield/exercise8/EasterModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/production/Exercise8/com/samchatfield/exercise8/Test.class" afterPath="$PROJECT_DIR$/bin/production/Exercise8/com/samchatfield/exercise8/Test.class" />
+    <list default="true" id="a56baf16-0fa3-45bb-b620-e614d0190e6c" name="Default" comment="Fully working solution to bonus question 1">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/Test.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DayWeek.java" afterPath="$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DayWeek.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DayWeekComponent.java" afterPath="$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DayWeekComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DayWeekGUI.java" afterPath="$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DayWeekGUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DayWeekModel.java" afterPath="$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DayWeekModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DayWeekView.java" afterPath="$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DayWeekView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/SliderListener.java" afterPath="$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/SliderListener.java" />
     </list>
     <ignored path="SoftwareWorkshop.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -118,7 +109,7 @@
       <file leaf-file-name="DayWeekComponent.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DayWeekComponent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.23877917">
+            <state vertical-scroll-proportion="0.2962298">
               <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -893,7 +884,7 @@
       <updated>1447779278518</updated>
       <workItem from="1447779279622" duration="4586000" />
       <workItem from="1447845439108" duration="8379000" />
-      <workItem from="1447863199736" duration="10552000" />
+      <workItem from="1447863199736" duration="10612000" />
     </task>
     <task id="LOCAL-00001" summary="Working command line test of algorithm to calculate date.">
       <created>1447783732825</created>
@@ -955,15 +946,21 @@
       <option name="project" value="LOCAL" />
       <updated>1447869151556</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Fully working solution to bonus question 1">
+      <created>1447890404100</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1447890404100</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23517000" />
+    <option name="totallyTimeSpent" value="23577000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="263" y="23" width="1175" height="828" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -975,7 +972,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22924902" sideWeight="0.4587234" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16765958" sideWeight="0.49310344" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16765958" sideWeight="0.49310344" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1009,7 +1006,8 @@
     <MESSAGE value="Complete solution for Exercise8 with javadocs." />
     <MESSAGE value="Fix Easter class" />
     <MESSAGE value="Working Zeller's algorithm for Gregorian calendar on command line." />
-    <option name="LAST_COMMIT_MESSAGE" value="Working Zeller's algorithm for Gregorian calendar on command line." />
+    <MESSAGE value="Fully working solution to bonus question 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fully working solution to bonus question 1" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1099,14 +1097,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24236985">
-          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -1242,7 +1232,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DayWeekComponent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.23877917">
+        <state vertical-scroll-proportion="0.2962298">
           <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
