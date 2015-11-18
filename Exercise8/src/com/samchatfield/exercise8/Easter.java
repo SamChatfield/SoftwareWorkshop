@@ -42,8 +42,8 @@ public class Easter {
         int k = c % 4;
         int l = (32 + 2 * e + 2 * i - h - k) % 7;
         int m = (int) Math.floor((a + 11 * h + 22 * l) / 451);
-        this.month = (int) Math.floor((h + l - 7 * m + 114) / 31);
-        this.day = ((h + l - 7 * m + 114) % 31) + 1;
+        month = (int) Math.floor((h + l - 7 * m + 114) / 31);
+        day = ((h + l - 7 * m + 114) % 31) + 1;
     }
 
 
@@ -61,6 +61,7 @@ public class Easter {
 
     public void setYear(int year) {
         this.year = year;
+        calcEaster(year);
     }
 
 }
