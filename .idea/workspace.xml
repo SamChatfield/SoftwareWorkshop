@@ -11,7 +11,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/SliderListener.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/Test.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Exercise8/src/com/samchatfield/exercise8/Easter.java" afterPath="$PROJECT_DIR$/Exercise8/src/com/samchatfield/exercise8/Easter.java" />
     </list>
     <ignored path="SoftwareWorkshop.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,26 +46,57 @@
         <entry file="file://$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DayWeek.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+              <caret line="98" column="52" selection-start-line="98" selection-start-column="52" selection-end-line="98" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1892#1893#0" expanded="true" />
                 <element signature="e#1979#1980#0" expanded="true" />
-                <element signature="e#2025#2026#0" expanded="true" />
-                <element signature="e#2107#2108#0" expanded="true" />
+                <element signature="e#2006#2007#0" expanded="true" />
+                <element signature="e#2032#2033#0" expanded="true" />
+                <element signature="e#2061#2062#0" expanded="true" />
+                <element signature="e#2089#2090#0" expanded="true" />
+                <element signature="e#2117#2118#0" expanded="true" />
+                <element signature="e#2144#2145#0" expanded="true" />
+                <element signature="e#2556#2557#0" expanded="true" />
+                <element signature="e#2638#2639#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EasterView.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Exercise8/src/com/samchatfield/exercise8/EasterView.java">
+      <file leaf-file-name="DayWeekModel.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DayWeekModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7307002">
-              <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.40754038">
+              <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#315#316#0" expanded="true" />
+                <element signature="e#354#355#0" expanded="true" />
+                <element signature="e#383#384#0" expanded="true" />
+                <element signature="e#424#425#0" expanded="true" />
+                <element signature="e#452#453#0" expanded="true" />
+                <element signature="e#492#493#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Easter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Exercise8/src/com/samchatfield/exercise8/Easter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="83" column="25" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EasterModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Exercise8/src/com/samchatfield/exercise8/EasterModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -110,10 +140,10 @@
         <option value="$PROJECT_DIR$/Exercise8/src/com/samchatfield/exercise8/SliderListener.java" />
         <option value="$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DayWeekView.java" />
         <option value="$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DayWeekComponent.java" />
-        <option value="$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DayWeekModel.java" />
         <option value="$PROJECT_DIR$/Exercise8/src/com/samchatfield/exercise8/Easter.java" />
-        <option value="$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DayWeek.java" />
         <option value="$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/Test.java" />
+        <option value="$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DayWeek.java" />
+        <option value="$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DayWeekModel.java" />
       </list>
     </option>
   </component>
@@ -814,7 +844,7 @@
       <updated>1447779278518</updated>
       <workItem from="1447779279622" duration="4586000" />
       <workItem from="1447845439108" duration="8379000" />
-      <workItem from="1447863199736" duration="4558000" />
+      <workItem from="1447863199736" duration="5077000" />
     </task>
     <task id="LOCAL-00001" summary="Working command line test of algorithm to calculate date.">
       <created>1447783732825</created>
@@ -864,15 +894,21 @@
       <option name="project" value="LOCAL" />
       <updated>1447863070529</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Fix Easter class">
+      <created>1447868618895</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1447868618895</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17523000" />
+    <option name="totallyTimeSpent" value="18042000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="240" y="23" width="1175" height="828" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -884,7 +920,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22924902" sideWeight="0.46553192" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16765958" sideWeight="0.49310344" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16765958" sideWeight="0.49310344" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -916,7 +952,8 @@
     <MESSAGE value="Changes to EasterView and SliderListener --complete" />
     <MESSAGE value="Complete working solution bar javadoc." />
     <MESSAGE value="Complete solution for Exercise8 with javadocs." />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete solution for Exercise8 with javadocs." />
+    <MESSAGE value="Fix Easter class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix Easter class" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1034,14 +1071,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Exercise8/src/com/samchatfield/exercise8/EasterModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Exercise8/src/com/samchatfield/exercise8/EasterComponent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1052,41 +1081,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DayWeekModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35008976">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Exercise8/src/com/samchatfield/exercise8/Easter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9192101">
-          <caret line="83" column="25" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Exercise8/src/com/samchatfield/exercise8/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37701976">
           <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DayWeek.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1892#1893#0" expanded="true" />
-            <element signature="e#1979#1980#0" expanded="true" />
-            <element signature="e#2025#2026#0" expanded="true" />
-            <element signature="e#2107#2108#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1108,10 +1107,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Exercise8/src/com/samchatfield/exercise8/EasterView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7307002">
+        <state vertical-scroll-proportion="0.0">
           <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DayWeek.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="98" column="52" selection-start-line="98" selection-start-column="52" selection-end-line="98" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1892#1893#0" expanded="true" />
+            <element signature="e#1979#1980#0" expanded="true" />
+            <element signature="e#2006#2007#0" expanded="true" />
+            <element signature="e#2032#2033#0" expanded="true" />
+            <element signature="e#2061#2062#0" expanded="true" />
+            <element signature="e#2089#2090#0" expanded="true" />
+            <element signature="e#2117#2118#0" expanded="true" />
+            <element signature="e#2144#2145#0" expanded="true" />
+            <element signature="e#2556#2557#0" expanded="true" />
+            <element signature="e#2638#2639#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Exercise8/src/com/samchatfield/exercise8/Easter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="83" column="25" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Exercise8/src/com/samchatfield/exercise8/EasterModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DayWeekModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40754038">
+          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+          <folding>
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#383#384#0" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
           </folding>
         </state>
       </provider>
