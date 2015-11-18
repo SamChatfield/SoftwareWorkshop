@@ -1,7 +1,5 @@
 package com.samchatfield.exercise8;
 
-import java.util.Date;
-
 /**
  * Class containing the logic of the Easter calculator
  *
@@ -10,7 +8,6 @@ import java.util.Date;
 public class Easter {
 
     private int day, month, year;
-    private Date easter;
 
     /**
      * Calculate the date on which easter falls in the given year
