@@ -94,7 +94,20 @@ public class DayWeek {
      * @return number of days in that month
      */
     public int calcDayMax(int month) {
+        if (month == 2 && !isLeapYear(year)) {
+            return 28;
+        }
         return Month.of(month).maxLength();
+    }
+
+    /**
+     * Determine if given year is a leap year to be used to control the number of days in February
+     *
+     * @param y year
+     * @return if it's a leap year return true else false
+     */
+    public boolean isLeapYear(int y) {
+        return (y % 4 == 0 && y % 100 != 0) || y % 400 == 0;
     }
 
     /**
@@ -163,6 +176,9 @@ public class DayWeek {
     public void setYear(int year) {
         this.year = year;
         dayOfWeek = calcGregorian(day, month, year);
+        if (month == 2) {
+            dayMax = calcDayMax(month);
+        }
     }
 
 }
