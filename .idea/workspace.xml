@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a56baf16-0fa3-45bb-b620-e614d0190e6c" name="Default" comment="Complete JavaDoc&#10;Optimised SliderListener.stateChanged()">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/production/Exercise8/com/samchatfield/exercise8/EasterComponent.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/production/Exercise8/com/samchatfield/exercise8/EasterGUI.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/production/Exercise8/com/samchatfield/exercise8/EasterView.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/production/Exercise8/com/samchatfield/exercise8/SliderListener.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/production/Exercise8Bonus1/com/samchatfield/exercise8Bonus1/DaySlider.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/production/Exercise8Bonus1/com/samchatfield/exercise8Bonus1/DayWeek.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/production/Exercise8Bonus1/com/samchatfield/exercise8Bonus1/DayWeekComponent.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/production/Exercise8Bonus1/com/samchatfield/exercise8Bonus1/DayWeekGUI.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/production/Exercise8Bonus1/com/samchatfield/exercise8Bonus1/DayWeekModel.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/production/Exercise8Bonus1/com/samchatfield/exercise8Bonus1/DayWeekView.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/production/Exercise8Bonus1/com/samchatfield/exercise8Bonus1/SliderListener.class" />
+    <list default="true" id="a56baf16-0fa3-45bb-b620-e614d0190e6c" name="Default" comment="§">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DayWeek.java" afterPath="$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DayWeek.java" />
     </list>
@@ -49,10 +38,20 @@
       <file leaf-file-name="DayWeek.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DayWeek.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.9425493">
-              <caret line="180" column="27" selection-start-line="180" selection-start-column="27" selection-end-line="180" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.7037702">
+              <caret line="111" column="21" selection-start-line="111" selection-start-column="21" selection-end-line="111" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3357#3358#0" expanded="true" />
+                <element signature="e#3383#3384#0" expanded="true" />
+                <element signature="e#3515#3516#0" expanded="true" />
+                <element signature="e#3547#3548#0" expanded="true" />
+                <element signature="e#3633#3634#0" expanded="true" />
+                <element signature="e#3661#3662#0" expanded="true" />
+                <element signature="e#3744#3745#0" expanded="true" />
+                <element signature="e#3771#3772#0" expanded="true" />
+                <element signature="e#3905#3906#0" expanded="true" />
+                <element signature="e#3934#3935#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -813,7 +812,7 @@
       <workItem from="1447779279622" duration="4586000" />
       <workItem from="1447845439108" duration="8379000" />
       <workItem from="1447863199736" duration="13830000" />
-      <workItem from="1447927043928" duration="2576000" />
+      <workItem from="1447927043928" duration="2813000" />
     </task>
     <task id="LOCAL-00001" summary="Working command line test of algorithm to calculate date.">
       <created>1447783732825</created>
@@ -893,11 +892,23 @@
       <option name="project" value="LOCAL" />
       <updated>1447892903501</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Add consideration of leap year for days in February">
+      <created>1447938165746</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1447938165746</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Add consideration of leap year for days in February">
+      <created>1447938262749</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1447938262749</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29371000" />
+    <option name="totallyTimeSpent" value="29608000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="263" y="23" width="1175" height="828" extended-state="0" />
@@ -950,7 +961,8 @@
     <MESSAGE value="Fully working solution to bonus question 1" />
     <MESSAGE value="Removed Test class" />
     <MESSAGE value="Complete JavaDoc&#10;Optimised SliderListener.stateChanged()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete JavaDoc&#10;Optimised SliderListener.stateChanged()" />
+    <MESSAGE value="Add consideration of leap year for days in February" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add consideration of leap year for days in February" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1147,10 +1159,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DayWeek.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.9425493">
-          <caret line="180" column="27" selection-start-line="180" selection-start-column="27" selection-end-line="180" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.7037702">
+          <caret line="111" column="21" selection-start-line="111" selection-start-column="21" selection-end-line="111" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3357#3358#0" expanded="true" />
+            <element signature="e#3383#3384#0" expanded="true" />
+            <element signature="e#3515#3516#0" expanded="true" />
+            <element signature="e#3547#3548#0" expanded="true" />
+            <element signature="e#3633#3634#0" expanded="true" />
+            <element signature="e#3661#3662#0" expanded="true" />
+            <element signature="e#3744#3745#0" expanded="true" />
+            <element signature="e#3771#3772#0" expanded="true" />
+            <element signature="e#3905#3906#0" expanded="true" />
+            <element signature="e#3934#3935#0" expanded="true" />
           </folding>
         </state>
       </provider>
