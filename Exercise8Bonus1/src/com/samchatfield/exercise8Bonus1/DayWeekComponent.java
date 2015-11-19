@@ -4,16 +4,24 @@ import javax.swing.*;
 import java.awt.*;
 
 /**
+ * Initialise the components that will appear on the frame, link the model and the view, add listeners to the sliders, this is the controller in the MVC design
+ *
  * Created by Sam on 18/11/2015.
  */
 public class DayWeekComponent extends JPanel {
 
+    /**
+     * Create component acting as controller in the MVC design, link model and view together
+     *
+     * @param dayWeek DayWeek logic object
+     */
     public DayWeekComponent(DayWeek dayWeek) {
         super();
 
         DayWeekModel model = new DayWeekModel(dayWeek);
         DayWeekView view = new DayWeekView(model);
         DaySlider daySlider = new DaySlider(model);
+
         model.addObserver(view);
         model.addObserver(daySlider);
 

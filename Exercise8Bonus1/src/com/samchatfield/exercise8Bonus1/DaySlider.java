@@ -5,12 +5,19 @@ import java.util.Observable;
 import java.util.Observer;
 
 /**
+ * Another part of the view portion of the MVC design, this time the slider representing the day value which must dynamically change depending on which month it is
+ *
  * Created by Sam on 18/11/2015.
  */
 public class DaySlider extends JSlider implements Observer {
 
     private DayWeekModel model;
 
+    /**
+     * Create new view observing the given model and initialise the JSlider using getDayMax to use correct maxiumum value based on current month
+     *
+     * @param model model observable
+     */
     public DaySlider(DayWeekModel model) {
         this.model = model;
         setMinimum(1);
@@ -23,6 +30,11 @@ public class DaySlider extends JSlider implements Observer {
         setLabelTable(createStandardLabels(4));
     }
 
+    /**
+     * Called when notifyObservers is called from the model observable
+     * @param o observable modified
+     * @param arg object
+     */
     @Override
     public void update(Observable o, Object arg) {
         setMaximum(model.getDayMax());

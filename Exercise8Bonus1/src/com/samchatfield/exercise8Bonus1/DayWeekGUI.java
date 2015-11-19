@@ -3,6 +3,8 @@ package com.samchatfield.exercise8Bonus1;
 import javax.swing.*;
 
 /**
+ * Main class containing frame used to display the program inputs and outputs
+ *
  * Created by Sam on 18/11/2015.
  */
 public class DayWeekGUI {
