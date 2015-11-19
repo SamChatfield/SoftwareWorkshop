@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a56baf16-0fa3-45bb-b620-e614d0190e6c" name="Default" comment="§">
+    <list default="true" id="a56baf16-0fa3-45bb-b620-e614d0190e6c" name="Default" comment="Consider leap year for Feb days">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DayWeek.java" afterPath="$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DayWeek.java" />
     </list>
@@ -38,7 +38,7 @@
       <file leaf-file-name="DayWeek.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DayWeek.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7037702">
+            <state vertical-scroll-proportion="0.70886075">
               <caret line="111" column="21" selection-start-line="111" selection-start-column="21" selection-end-line="111" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -812,7 +812,7 @@
       <workItem from="1447779279622" duration="4586000" />
       <workItem from="1447845439108" duration="8379000" />
       <workItem from="1447863199736" duration="13830000" />
-      <workItem from="1447927043928" duration="2813000" />
+      <workItem from="1447927043928" duration="2892000" />
     </task>
     <task id="LOCAL-00001" summary="Working command line test of algorithm to calculate date.">
       <created>1447783732825</created>
@@ -908,7 +908,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29608000" />
+    <option name="totallyTimeSpent" value="29687000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="263" y="23" width="1175" height="828" extended-state="0" />
@@ -916,12 +916,12 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23451911" sideWeight="0.48510638" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23451911" sideWeight="0.48170212" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22924902" sideWeight="0.54468083" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23451911" sideWeight="0.51829785" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32806325" sideWeight="0.4893617" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22924902" sideWeight="0.45531914" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22924902" sideWeight="0.45531914" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20510638" sideWeight="0.49310344" order="0" side_tool="false" content_ui="combo" />
@@ -951,6 +951,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Working command line test of algorithm to calculate date." />
     <MESSAGE value="EasterModel added and working" />
     <MESSAGE value="Changes to EasterView and SliderListener --complete" />
@@ -962,7 +963,8 @@
     <MESSAGE value="Removed Test class" />
     <MESSAGE value="Complete JavaDoc&#10;Optimised SliderListener.stateChanged()" />
     <MESSAGE value="Add consideration of leap year for days in February" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add consideration of leap year for days in February" />
+    <MESSAGE value="Consider leap year for Feb days" />
+    <option name="LAST_COMMIT_MESSAGE" value="Consider leap year for Feb days" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1159,7 +1161,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Exercise8Bonus1/src/com/samchatfield/exercise8Bonus1/DayWeek.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7037702">
+        <state vertical-scroll-proportion="0.70886075">
           <caret line="111" column="21" selection-start-line="111" selection-start-column="21" selection-end-line="111" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
