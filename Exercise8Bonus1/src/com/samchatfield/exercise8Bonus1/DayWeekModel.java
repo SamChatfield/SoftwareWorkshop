@@ -62,6 +62,15 @@ public class DayWeekModel extends Observable {
     }
 
     /**
+     * Return the julian day of the given Gregorian date
+     *
+     * @return julian day
+     */
+    public double getJulianDay() {
+        return dayWeek.getJulianDay();
+    }
+
+    /**
      * Change day value and notify the view of the change to update itself
      * @param day new day
      */

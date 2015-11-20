@@ -20,10 +20,12 @@ public class DayWeekComponent extends JPanel {
 
         DayWeekModel model = new DayWeekModel(dayWeek);
         DayWeekView view = new DayWeekView(model);
-        DaySlider daySlider = new DaySlider(model);
+        JulianView julianView = new JulianView(model);
+        DaySliderView daySliderView = new DaySliderView(model);
 
         model.addObserver(view);
-        model.addObserver(daySlider);
+        model.addObserver(julianView);
+        model.addObserver(daySliderView);
 
         JSlider monthSlider = new JSlider(1, 12, model.getMonth());
         monthSlider.setPaintTicks(true);
@@ -40,20 +42,19 @@ public class DayWeekComponent extends JPanel {
         yearSlider.setPaintLabels(true);
         yearSlider.setLabelTable(yearSlider.createStandardLabels(1000));
 
-        System.out.println(yearSlider.getPreferredSize().toString());
-
-        SliderListener listener = new SliderListener(model, daySlider, monthSlider, yearSlider);
-        daySlider.addChangeListener(listener);
+        SliderListener listener = new SliderListener(model, daySliderView, monthSlider, yearSlider);
+        daySliderView.addChangeListener(listener);
         monthSlider.addChangeListener(listener);
         yearSlider.addChangeListener(listener);
 
         add(new JLabel("Day:"));
-        add(daySlider);
+        add(daySliderView);
         add(new JLabel("Month:"));
         add(monthSlider);
         add(new JLabel("Year:"));
         add(yearSlider);
         add(view);
+        add(julianView);
     }
 
 }

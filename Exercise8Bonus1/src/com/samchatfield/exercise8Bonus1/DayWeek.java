@@ -14,6 +14,7 @@ public class DayWeek {
 
     private int day, month, year, dayMax;
     private String dayOfWeek;
+    private double julianDay;
 
     /**
      * Initialise variables and calculate day from starting values
@@ -27,7 +28,20 @@ public class DayWeek {
         this.month = month;
         this.year = year;
         this.dayMax = calcDayMax(month);
+        updateValues(day, month, year);
+    }
+
+    /**
+     * Update the day of the week and the julian day
+     *
+     * @param day   day
+     * @param month month
+     * @param year  year
+     */
+    public void updateValues(int day, int month, int year) {
         dayOfWeek = calcGregorian(day, month, year);
+        julianDay = calcJulianDay(day, month, year);
+        System.out.println(julianDay);
     }
 
     /**
@@ -37,7 +51,7 @@ public class DayWeek {
      * @param year year
      * @return h, a value representing the day as per Zeller's algorithm (0 = Saturday, 1 = Sunday ... 6 = Friday) which must be converted to conventional values Monday-Sunday used by java.time.DayOfWeek
      */
-    private String calcGregorian(int day, int month, int year) {
+    public String calcGregorian(int day, int month, int year) {
         int q = day;
         int y = year - 1;
         int m;
@@ -60,6 +74,29 @@ public class DayWeek {
                         (int) Math.floor(y / 400)
         ) % 7;
         return dayToString(hToDay(h));
+    }
+
+    /**
+     * Calculate current Julian based on Gregorian date and formula given on wikipedia page for 'Julian Day'
+     *
+     * @param day   day
+     * @param month month
+     * @param year  year
+     * @return julian day
+     */
+    public double calcJulianDay(int day, int month, int year) {
+        double a = Math.floor((14 - month) / 12);
+        double y = year + 4800 - a;
+        double m = month + 12 * a - 3;
+
+        double JDN = day +
+                Math.floor((153 * m + 2) / 5) +
+                365 * y +
+                Math.floor(y / 4) -
+                Math.floor(y / 100) +
+                Math.floor(y / 400) -
+                32045;
+        return JDN;
     }
 
     /**
@@ -94,10 +131,7 @@ public class DayWeek {
      * @return number of days in that month
      */
     public int calcDayMax(int month) {
-        if (month == 2 && !isLeapYear(year)) {
-            return 28;
-        }
-        return Month.of(month).maxLength();
+        return (month == 2 && !isLeapYear(year)) ? 28 : Month.of(month).maxLength();
     }
 
     /**
@@ -151,12 +185,21 @@ public class DayWeek {
     }
 
     /**
+     * Return the julian day of the given Gregorian date
+     *
+     * @return julian day
+     */
+    public double getJulianDay() {
+        return julianDay;
+    }
+
+    /**
      * Change day value and recalculate the day of the week
      * @param day new day
      */
     public void setDay(int day) {
         this.day = day;
-        dayOfWeek = calcGregorian(day, month, year);
+        updateValues(day, month, year);
     }
 
     /**
@@ -165,7 +208,7 @@ public class DayWeek {
      */
     public void setMonth(int month) {
         this.month = month;
-        dayOfWeek = calcGregorian(day, month, year);
+        updateValues(day, month, year);
         dayMax = calcDayMax(month);
     }
 
@@ -175,7 +218,7 @@ public class DayWeek {
      */
     public void setYear(int year) {
         this.year = year;
-        dayOfWeek = calcGregorian(day, month, year);
+        updateValues(day, month, year);
         if (month == 2) {
             dayMax = calcDayMax(month);
         }

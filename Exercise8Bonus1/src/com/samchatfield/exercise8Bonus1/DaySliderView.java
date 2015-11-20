@@ -9,7 +9,7 @@ import java.util.Observer;
  *
  * Created by Sam on 18/11/2015.
  */
-public class DaySlider extends JSlider implements Observer {
+public class DaySliderView extends JSlider implements Observer {
 
     private DayWeekModel model;
 
@@ -18,7 +18,7 @@ public class DaySlider extends JSlider implements Observer {
      *
      * @param model model observable
      */
-    public DaySlider(DayWeekModel model) {
+    public DaySliderView(DayWeekModel model) {
         this.model = model;
         setMinimum(1);
         setMaximum(model.getDayMax());

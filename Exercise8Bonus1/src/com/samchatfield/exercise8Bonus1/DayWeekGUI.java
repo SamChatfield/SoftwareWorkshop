@@ -11,9 +11,9 @@ public class DayWeekGUI {
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("Day of Week Calculator");
-        frame.setSize(500, 200);
+        frame.setSize(475, 200);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setResizable(false);
+//        frame.setResizable(false);
 
         DayWeek dayWeek = new DayWeek(18, 11, 2015);
         DayWeekComponent dayWeekComponent = new DayWeekComponent(dayWeek);
