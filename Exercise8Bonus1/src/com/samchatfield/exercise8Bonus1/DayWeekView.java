@@ -32,7 +32,7 @@ public class DayWeekView extends JLabel implements Observer {
      * @return string to output to label
      */
     public String formatDate(int day, int month, int year, String dayOfWeek) {
-        return "    " + day + "/" + month + "/" + year + " falls on a " + dayOfWeek + ".    ";
+        return "        " + day + "/" + month + "/" + year + " falls on a " + dayOfWeek + ".        ";
     }
 
     /**

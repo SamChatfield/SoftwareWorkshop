@@ -41,7 +41,6 @@ public class DayWeek {
     public void updateValues(int day, int month, int year) {
         dayOfWeek = calcGregorian(day, month, year);
         julianDay = calcJulianDay(day, month, year);
-        System.out.println(julianDay);
     }
 
     /**
