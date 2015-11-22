@@ -34,19 +34,21 @@ public class Easter {
      * @param y year
      */
     public void calcEaster(int y) {
+        // The mathematical floor operation is used in the algorithm given on wikipedia but this is what happens
+        // automatically in java with integers so it's not necessary to use it in this implementation.
         int a = y % 19;
-        int b = (int) Math.floor(y / 100);
+        int b = y / 100;
         int c = y % 100;
-        int d = (int) Math.floor(b / 4);
+        int d = b / 4;
         int e = b % 4;
-        int f = (int) Math.floor((b + 8) / 25);
-        int g = (int) Math.floor((b - f + 1) / 3);
+        int f = (b + 8) / 25;
+        int g = (b - f + 1) / 3;
         int h = (19 * a + b - d - g + 15) % 30;
-        int i = (int) Math.floor(c / 4);
+        int i = c / 4;
         int k = c % 4;
         int l = (32 + 2 * e + 2 * i - h - k) % 7;
-        int m = (int) Math.floor((a + 11 * h + 22 * l) / 451);
-        month = (int) Math.floor((h + l - 7 * m + 114) / 31);
+        int m = (a + 11 * h + 22 * l) / 451;
+        month = (h + l - 7 * m + 114) / 31;
         day = ((h + l - 7 * m + 114) % 31) + 1;
     }
 
