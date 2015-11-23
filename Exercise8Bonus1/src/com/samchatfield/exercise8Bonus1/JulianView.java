@@ -22,14 +22,15 @@ public class JulianView extends JLabel implements Observer {
     }
 
     public String formatDay(double j, int day, int month, int year) {
+        String julianDay = "The Julian Day on " + day + "/" + month + "/" + year + " is " + Double.toString(j);
         if (year > 1582) {
-            return "The Julian Day on " + day + "/" + month + "/" + year + " is " + Double.toString(j);
+            return julianDay;
         } else if (year == 1582) {
             if (month > 10) {
-                return "The Julian Day on " + day + "/" + month + "/" + year + " is " + Double.toString(j);
+                return julianDay;
             } else if (month == 10) {
                 if (day >= 15) {
-                    return "The Julian Day on " + day + "/" + month + "/" + year + " is " + Double.toString(j);
+                    return julianDay;
                 }
             }
         }
