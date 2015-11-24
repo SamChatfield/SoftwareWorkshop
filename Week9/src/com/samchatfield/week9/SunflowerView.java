@@ -25,6 +25,7 @@ public class SunflowerView extends JPanel implements Observer {
         int width = getWidth();
         int height = getHeight();
 
+        g2d.clearRect(0, 0, width, height);
         double diameter = Math.min(width, height);
 
         g2d.setColor(Color.ORANGE);
@@ -40,6 +41,7 @@ public class SunflowerView extends JPanel implements Observer {
 
     @Override
     public void update(Observable o, Object arg) {
+
         repaint();
     }
 }
