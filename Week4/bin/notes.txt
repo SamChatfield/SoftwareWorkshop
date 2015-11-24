@@ -1,0 +1,27 @@
+Person class spec
+{
+	attr:
+	well or not
+	
+	const:
+	creates well person
+	
+	tostring
+	get
+	set
+}
+
+Population class spec
+{
+	attr:
+	array of people
+	
+	const:
+	int size of pop
+	
+	tostring
+	getSize
+	
+	javadoc
+	test
+}
