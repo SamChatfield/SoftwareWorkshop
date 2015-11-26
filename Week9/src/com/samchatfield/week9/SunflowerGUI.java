@@ -8,7 +8,7 @@ import javax.swing.*;
 public class SunflowerGUI {
 
     public static void main(String[] args) {
-        JFrame frame = new JFrame("Day of Week Calculator");
+        JFrame frame = new JFrame("Sunflower");
         frame.setSize(500, 500);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
