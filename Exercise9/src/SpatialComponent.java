@@ -17,4 +17,5 @@ public class SpatialComponent extends JPanel {
         add(thresholdPanel, BorderLayout.SOUTH);
         add(view, BorderLayout.CENTER);
     }
+
 }

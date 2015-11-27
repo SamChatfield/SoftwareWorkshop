@@ -23,6 +23,7 @@ public class SpatialView extends JPanel implements Observer {
 
         int w = getWidth();
         int h = getHeight();
+
         g2d.clearRect(0, 0, w, h);
         double diameter = Math.min(w, h);
 
