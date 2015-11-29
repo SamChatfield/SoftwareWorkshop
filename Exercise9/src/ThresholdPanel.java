@@ -6,15 +6,19 @@ import java.awt.*;
  */
 public class ThresholdPanel extends JPanel {
 
-    public ThresholdPanel(SpatialNetwork sn) {
+    public ThresholdPanel(SpatialModel model, SpatialView view) {
         super();
-
-        SpatialModel model = new SpatialModel(sn);
-        SpatialView view = new SpatialView(model);
 
         JLabel label = new JLabel("Threshold:");
         JSlider slider = new JSlider(0, 100, (int) (model.getThreshold() * 100));
-        slider.addChangeListener(e -> model.setThreshold(slider.getValue() / 100));
+        slider.addChangeListener(e -> model.setThreshold(0.01 * slider.getValue()));
+
+        slider.setPaintTicks(true);
+        slider.setMajorTickSpacing(10);
+        slider.setMinorTickSpacing(1);
+
+        slider.setPaintLabels(true);
+        slider.setLabelTable(slider.createStandardLabels(10));
 
         model.addObserver(view);
 

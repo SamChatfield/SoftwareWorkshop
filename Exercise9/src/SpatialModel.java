@@ -26,13 +26,17 @@ public class SpatialModel extends Observable {
         return sn.getPoints();
     }
 
+    public boolean areConnected(Point2D.Double a, Point2D.Double b) {
+        return sn.areConnected(a, b);
+    }
+
     public void setNumberPoints(int numberPoints) {
         sn.setNumberPoints(numberPoints);
         setChanged();
         notifyObservers();
     }
 
-    public void setThreshold(int threshold) {
+    public void setThreshold(double threshold) {
         sn.setThreshold(threshold);
         setChanged();
         notifyObservers();

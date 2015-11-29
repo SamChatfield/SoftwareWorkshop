@@ -10,13 +10,16 @@ public class SpatialNetwork {
     private int numberPoints;
     private double threshold;
     private ArrayList<Point2D.Double> points;
-//    private Hashtable<Point2D.Double[], Double> distances;
 
     public SpatialNetwork(int numberPoints, double threshold) {
         this.numberPoints = numberPoints;
         this.threshold = threshold;
         points = new ArrayList<>();
         addPoints(numberPoints);
+    }
+
+    public boolean areConnected(Point2D.Double a, Point2D.Double b) {
+        return a.distance(b) < threshold;
     }
 
     public void addPoints(int n) {
@@ -57,7 +60,7 @@ public class SpatialNetwork {
         updatePoints();
     }
 
-    public void setThreshold(int threshold) {
+    public void setThreshold(double threshold) {
         this.threshold = threshold;
     }
 
