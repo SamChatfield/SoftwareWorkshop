@@ -15,7 +15,12 @@ public class SpatialNetwork {
         this.numberPoints = numberPoints;
         this.threshold = threshold;
         points = new ArrayList<>();
+        initPoints();
+    }
+
+    public void initPoints() {
         Random rand = new Random();
+        points.clear();
         for (int i = 0; i < 200; i++) {
             points.add(new Point2D.Double(rand.nextDouble(), rand.nextDouble()));
         }

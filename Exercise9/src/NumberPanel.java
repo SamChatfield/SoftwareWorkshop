@@ -1,16 +1,22 @@
 import javax.swing.*;
 import java.awt.*;
+import java.util.Observable;
+import java.util.Observer;
 
 /**
  * Created by Sam on 29/11/2015.
  */
-public class NumberPanel extends JPanel {
+public class NumberPanel extends JPanel implements Observer {
 
-    public NumberPanel(SpatialModel model, SpatialView view) {
+    private JSlider slider;
+    private SpatialModel model;
+
+    public NumberPanel(SpatialModel model) {
         super();
+        this.model = model;
 
         JLabel label = new JLabel("Number of Nodes:");
-        JSlider slider = new JSlider(0, 200, model.getNumberPoints());
+        slider = new JSlider(0, 200, model.getNumberPoints());
         slider.addChangeListener(e -> model.setNumberPoints(slider.getValue()));
 
         slider.setPaintTicks(true);
@@ -23,5 +29,10 @@ public class NumberPanel extends JPanel {
         setLayout(new BorderLayout());
         add(label, BorderLayout.WEST);
         add(slider, BorderLayout.CENTER);
+    }
+
+    @Override
+    public void update(Observable o, Object arg) {
+        slider.setValue(model.getNumberPoints());
     }
 }

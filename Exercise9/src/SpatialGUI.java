@@ -7,7 +7,7 @@ public class SpatialGUI {
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("Spatial Network");
-        frame.setSize(500, 600);
+        frame.setSize(500, 550);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         SpatialNetwork sn = new SpatialNetwork(100, 0.2);

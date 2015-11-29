@@ -1,16 +1,22 @@
 import javax.swing.*;
 import java.awt.*;
+import java.util.Observable;
+import java.util.Observer;
 
 /**
  * Created by Sam on 26/11/2015.
  */
-public class ThresholdPanel extends JPanel {
+public class ThresholdPanel extends JPanel implements Observer {
 
-    public ThresholdPanel(SpatialModel model, SpatialView view) {
+    private JSlider slider;
+    private SpatialModel model;
+
+    public ThresholdPanel(SpatialModel model) {
         super();
+        this.model = model;
 
         JLabel label = new JLabel("Threshold:");
-        JSlider slider = new JSlider(0, 100, (int) (model.getThreshold() * 100));
+        slider = new JSlider(0, 100, (int) (model.getThreshold() * 100));
         slider.addChangeListener(e -> model.setThreshold(0.01 * slider.getValue()));
 
         slider.setPaintTicks(true);
@@ -23,6 +29,11 @@ public class ThresholdPanel extends JPanel {
         setLayout(new BorderLayout());
         add(label, BorderLayout.WEST);
         add(slider, BorderLayout.CENTER);
+    }
+
+    @Override
+    public void update(Observable o, Object arg) {
+        slider.setValue((int) (model.getThreshold() * 100));
     }
 
 }

@@ -14,6 +14,10 @@ public class SpatialModel extends Observable {
         this.sn = sn;
     }
 
+    public void initPoints() {
+        sn.initPoints();
+    }
+
     public int getNumberPoints() {
         return sn.getNumberPoints();
     }
