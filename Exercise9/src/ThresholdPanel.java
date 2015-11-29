@@ -20,8 +20,6 @@ public class ThresholdPanel extends JPanel {
         slider.setPaintLabels(true);
         slider.setLabelTable(slider.createStandardLabels(10));
 
-        model.addObserver(view);
-
         setLayout(new BorderLayout());
         add(label, BorderLayout.WEST);
         add(slider, BorderLayout.CENTER);

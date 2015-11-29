@@ -26,8 +26,8 @@ public class SpatialModel extends Observable {
         return sn.getPoints();
     }
 
-    public boolean areConnected(Point2D.Double a, Point2D.Double b) {
-        return sn.areConnected(a, b);
+    public boolean areConnected(double ox, double oy, double dx, double dy) {
+        return sn.areConnected(ox, oy, dx, dy);
     }
 
     public void setNumberPoints(int numberPoints) {

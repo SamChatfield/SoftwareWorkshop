@@ -15,32 +15,14 @@ public class SpatialNetwork {
         this.numberPoints = numberPoints;
         this.threshold = threshold;
         points = new ArrayList<>();
-        addPoints(numberPoints);
-    }
-
-    public boolean areConnected(Point2D.Double a, Point2D.Double b) {
-        return a.distance(b) < threshold;
-    }
-
-    public void addPoints(int n) {
         Random rand = new Random();
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < 200; i++) {
             points.add(new Point2D.Double(rand.nextDouble(), rand.nextDouble()));
         }
     }
 
-    public void removePoints(int n) {
-        for (int i = 0; i < n; i++) {
-            points.remove(i);
-        }
-    }
-
-    public void updatePoints() {
-        if (points.size() > numberPoints)
-            removePoints(points.size() - numberPoints);
-        else if (points.size() < numberPoints) {
-            addPoints(numberPoints - points.size());
-        }
+    public boolean areConnected(double ox, double oy, double dx, double dy) {
+        return Math.sqrt(Math.pow(dx - ox, 2) + Math.pow(dy - oy, 2)) < threshold;
     }
 
     public int getNumberPoints() {
@@ -57,20 +39,10 @@ public class SpatialNetwork {
 
     public void setNumberPoints(int numberPoints) {
         this.numberPoints = numberPoints;
-        updatePoints();
     }
 
     public void setThreshold(double threshold) {
         this.threshold = threshold;
-    }
-
-    // TODO REMOVE AFTER TESTING
-    public String toString() {
-        String acc = "Network of " + points.size() + " points\n";
-        for (Point2D.Double point : points) {
-            acc = acc + "[" + point.getX() + ", " + point.getY() + "]\n";
-        }
-        return acc;
     }
 
 }

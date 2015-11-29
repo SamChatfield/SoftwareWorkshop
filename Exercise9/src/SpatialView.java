@@ -1,7 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.geom.Line2D;
-import java.awt.geom.Point2D;
 import java.util.Observable;
 import java.util.Observer;
 
@@ -26,16 +25,16 @@ public class SpatialView extends JPanel implements Observer {
 
         g2d.clearRect(0, 0, w, h);
         double netSize = Math.min(w, h);
-        for (Point2D.Double point : model.getPoints()) {
-            double x = point.getX();
-            double y = point.getY();
+        for (int i = 0; i < model.getNumberPoints() - 1; i++) {
+            double x = model.getPoints().get(i).getX();
+            double y = model.getPoints().get(i).getY();
             Spot spot = new Spot(x * netSize, y * netSize, 0.01 * netSize);
 
-            for (Point2D.Double destPoint : model.getPoints()) {
-                double dx = destPoint.getX();
-                double dy = destPoint.getY();
-                if (model.areConnected(point, destPoint)) {
-                    Line2D.Double line = new Line2D.Double(x * netSize, y * netSize, dx * netSize, dy * netSize);
+            for (int j = 0; j < model.getNumberPoints() - 1; j++) {
+                double jx = model.getPoints().get(j).getX();
+                double jy = model.getPoints().get(j).getY();
+                if (model.areConnected(x, y, jx, jy)) {
+                    Line2D.Double line = new Line2D.Double(x * netSize, y * netSize, jx * netSize, jy * netSize);
                     g2d.setColor(Color.BLACK);
                     g2d.draw(line);
                 }

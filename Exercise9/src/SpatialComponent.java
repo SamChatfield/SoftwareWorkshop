@@ -12,8 +12,12 @@ public class SpatialComponent extends JPanel {
         SpatialModel model = new SpatialModel(sn);
         SpatialView view = new SpatialView(model);
         ThresholdPanel thresholdPanel = new ThresholdPanel(model, view);
+        NumberPanel numberPanel = new NumberPanel(model, view);
+
+        model.addObserver(view);
 
         setLayout(new BorderLayout());
+        add(numberPanel, BorderLayout.NORTH);
         add(thresholdPanel, BorderLayout.SOUTH);
         add(view, BorderLayout.CENTER);
     }
