@@ -5,17 +5,27 @@ import java.util.Observable;
 import java.util.Observer;
 
 /**
+ * A view part of the MVC design pattern which handles the display of the actual network
  * Created by Sam on 26/11/2015.
  */
 public class SpatialView extends JPanel implements Observer {
 
     private SpatialModel model;
 
+    /**
+     * Create new network view using given model
+     *
+     * @param model
+     */
     public SpatialView(SpatialModel model) {
         super();
         this.model = model;
     }
 
+    /**
+     * Paint the network using the given graphics object based on what the current number of nodes is
+     * @param g graphics object
+     */
     @Override
     public void paintComponent(Graphics g) {
         Graphics2D g2d = (Graphics2D) g;
@@ -44,6 +54,11 @@ public class SpatialView extends JPanel implements Observer {
         }
     }
 
+    /**
+     * Called when number of nodes or threshold are changed causing the network to repaint
+     * @param o Observable
+     * @param arg Object
+     */
     @Override
     public void update(Observable o, Object arg) {
         repaint();

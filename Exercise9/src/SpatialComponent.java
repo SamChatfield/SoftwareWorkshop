@@ -2,10 +2,16 @@ import javax.swing.*;
 import java.awt.*;
 
 /**
+ * Component to hold all of the views i.e. the network, sliders & labels and buttons
  * Created by Sam on 26/11/2015.
  */
 public class SpatialComponent extends JPanel {
 
+    /**
+     * Create new component and add all the parts using BorderLayout and add the observers of the model
+     *
+     * @param sn
+     */
     public SpatialComponent(SpatialNetwork sn) {
         super();
 

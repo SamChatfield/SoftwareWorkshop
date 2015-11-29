@@ -2,10 +2,16 @@ import javax.swing.*;
 import java.awt.*;
 
 /**
+ * Panel to contain the reset and exit buttons
  * Created by Sam on 29/11/2015.
  */
 public class ButtonPanel extends JPanel {
 
+    /**
+     * Create the panel to hold the buttons using GridLayout to lay them out and lambda expressions to create the listeners
+     *
+     * @param model
+     */
     public ButtonPanel(SpatialModel model) {
         super();
 
@@ -23,4 +29,5 @@ public class ButtonPanel extends JPanel {
         add(reset);
         add(exit);
     }
+
 }
