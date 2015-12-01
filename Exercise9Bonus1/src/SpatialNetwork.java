@@ -52,7 +52,6 @@ public class SpatialNetwork {
 
     public void simulateDay() {
         Random rand = new Random();
-        System.out.println(trees.size());
         for (Tree tree : trees) {
             double x = tree.getX();
             double y = tree.getY();
@@ -62,10 +61,24 @@ public class SpatialNetwork {
                 double dy = destTree.getY();
 
                 // if trees are connected and one is and one isn't then infect other
-                if (areConnected(x, y, dx, dy) && !tree.isInfected() && destTree.isInfected() && rand.nextDouble() < infect) {
+                if (areConnected(x, y, dx, dy) &&
+                        !tree.isInfected() &&
+                        destTree.isInfected() &&
+                        rand.nextDouble() < infect &&
+                        tree.isShowing() &&
+                        destTree.isShowing()) {
                     tree.setInfected(true);
                 }
             }
+        }
+    }
+
+    public void checkShowing() {
+        for (Tree tree : trees) {
+            if (trees.indexOf(tree) < getNumberTrees())
+                tree.setShowing(true);
+            else
+                tree.setShowing(false);
         }
     }
 

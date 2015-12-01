@@ -5,7 +5,7 @@ import java.awt.geom.Point2D;
  */
 public class Tree extends Point2D.Double {
 
-    private boolean infected;
+    private boolean infected, showing;
 
     public Tree(double x, double y, boolean infected) {
         super(x, y);
@@ -16,8 +16,16 @@ public class Tree extends Point2D.Double {
         return infected;
     }
 
+    public boolean isShowing() {
+        return showing;
+    }
+
     public void setInfected(boolean infected) {
         this.infected = infected;
+    }
+
+    public void setShowing(boolean showing) {
+        this.showing = showing;
     }
 
 }

@@ -28,6 +28,8 @@ public class SpatialModel extends Observable {
 
     public void simulateDay() {
         sn.simulateDay();
+        setChanged();
+        notifyObservers();
     }
 
     /**

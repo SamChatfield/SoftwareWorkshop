@@ -16,7 +16,7 @@ public class SpatialTreeGUI {
         frame.setSize(500, 550);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        SpatialNetwork sn = new SpatialNetwork(100, 0.2, 0.05, 1.0);
+        SpatialNetwork sn = new SpatialNetwork(100, 0.2, 0.05, 0.1);
         SpatialComponent sc = new SpatialComponent(sn);
 
         frame.add(sc);

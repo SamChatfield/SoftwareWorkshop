@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Exercise10/Exercise10.iml" filepath="$PROJECT_DIR$/Exercise10/Exercise10.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exercise8/Exercise8.iml" filepath="$PROJECT_DIR$/Exercise8/Exercise8.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exercise8Bonus1/Exercise8Bonus1.iml" filepath="$PROJECT_DIR$/Exercise8Bonus1/Exercise8Bonus1.iml" />
       <module fileurl="file://$PROJECT_DIR$/PrayerTimes/Exercise8Bonus3.iml" filepath="$PROJECT_DIR$/PrayerTimes/Exercise8Bonus3.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exercise9/Exercise9.iml" filepath="$PROJECT_DIR$/Exercise9/Exercise9.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exercise9Bonus1/Exercise9Bonus1.iml" filepath="$PROJECT_DIR$/Exercise9Bonus1/Exercise9Bonus1.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/SoftwareWorkshop.iml" filepath="$PROJECT_DIR$/.idea/SoftwareWorkshop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week10/Week10.iml" filepath="$PROJECT_DIR$/Week10/Week10.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week9/Week9.iml" filepath="$PROJECT_DIR$/Week9/Week9.iml" />
     </modules>
   </component>
