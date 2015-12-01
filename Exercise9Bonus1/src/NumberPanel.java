@@ -22,8 +22,8 @@ public class NumberPanel extends JPanel implements Observer {
         this.model = model;
 
         JLabel label = new JLabel("Number of Nodes:");
-        slider = new JSlider(0, 200, model.getNumberPoints());
-        slider.addChangeListener(e -> model.setNumberPoints(slider.getValue()));
+        slider = new JSlider(0, 200, model.getNumberTrees());
+        slider.addChangeListener(e -> model.setNumberTrees(slider.getValue()));
 
         slider.setPaintTicks(true);
         slider.setMajorTickSpacing(50);
@@ -45,6 +45,6 @@ public class NumberPanel extends JPanel implements Observer {
      */
     @Override
     public void update(Observable o, Object arg) {
-        slider.setValue(model.getNumberPoints());
+        slider.setValue(model.getNumberTrees());
     }
 }

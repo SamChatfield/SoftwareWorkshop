@@ -16,17 +16,20 @@ public class ButtonPanel extends JPanel {
         super();
 
         JButton reset = new JButton("Reset");
+        JButton simDay = new JButton("Day+1");
         JButton exit = new JButton("Exit");
 
         reset.addActionListener(e -> {
-            model.setNumberPoints(100);
+            model.setNumberTrees(100);
             model.setThreshold(0.2);
-            model.initPoints();
+            model.initTrees();
         });
+        simDay.addActionListener(e -> model.simulateDay());
         exit.addActionListener(e -> System.exit(0));
 
-        setLayout(new GridLayout(12, 1));
+        setLayout(new GridLayout(10, 1));
         add(reset);
+        add(simDay);
         add(exit);
     }
 

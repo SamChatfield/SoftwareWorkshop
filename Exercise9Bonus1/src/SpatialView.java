@@ -36,21 +36,27 @@ public class SpatialView extends JPanel implements Observer {
 
         g2d.clearRect(0, 0, w, h);
         double netSize = Math.min(w, h);
-        for (int i = 0; i < model.getNumberPoints(); i++) {
-            double x = model.getPoints().get(i).getX();
-            double y = model.getPoints().get(i).getY();
+        for (int i = 0; i < model.getNumberTrees(); i++) {
+            double x = model.getTrees().get(i).getX();
+            double y = model.getTrees().get(i).getY();
+
             Spot spot = new Spot(x * netSize, y * netSize, 0.01 * netSize);
 
-            for (int j = 0; j < model.getNumberPoints(); j++) {
-                double jx = model.getPoints().get(j).getX();
-                double jy = model.getPoints().get(j).getY();
+            for (int j = 0; j < model.getNumberTrees(); j++) {
+                double jx = model.getTrees().get(j).getX();
+                double jy = model.getTrees().get(j).getY();
+
                 if (model.areConnected(x, y, jx, jy)) {
                     Line2D.Double line = new Line2D.Double(x * netSize, y * netSize, jx * netSize, jy * netSize);
                     g2d.setColor(Color.BLACK);
                     g2d.draw(line);
                 }
             }
-            g2d.setColor(Color.RED);
+            g2d.setColor(Color.BLACK);
+            if (model.getTrees().get(i).isInfected()) {
+                g2d.setColor(Color.RED);
+                g2d.fill(spot);
+            }
             g2d.fill(spot);
         }
     }

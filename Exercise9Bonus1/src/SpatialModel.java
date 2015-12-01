@@ -1,4 +1,3 @@
-import java.awt.geom.Point2D;
 import java.util.ArrayList;
 import java.util.Observable;
 
@@ -21,10 +20,14 @@ public class SpatialModel extends Observable {
     }
 
     /**
-     * Call SpatialNetwork.initPoints for possibility of reset button regenerating the nodes
+     * Call SpatialNetwork.initTrees for possibility of reset button regenerating the nodes
      */
-    public void initPoints() {
-        sn.initPoints();
+    public void initTrees() {
+        sn.initTrees();
+    }
+
+    public void simulateDay() {
+        sn.simulateDay();
     }
 
     /**
@@ -32,8 +35,8 @@ public class SpatialModel extends Observable {
      *
      * @return number of points
      */
-    public int getNumberPoints() {
-        return sn.getNumberPoints();
+    public int getNumberTrees() {
+        return sn.getNumberTrees();
     }
 
     /**
@@ -50,8 +53,8 @@ public class SpatialModel extends Observable {
      *
      * @return
      */
-    public ArrayList<Point2D.Double> getPoints() {
-        return sn.getPoints();
+    public ArrayList<Tree> getTrees() {
+        return sn.getTrees();
     }
 
     /**
@@ -70,10 +73,10 @@ public class SpatialModel extends Observable {
     /**
      * Change number of points and notifyObservers
      *
-     * @param numberPoints new number of points
+     * @param numberTrees new number of points
      */
-    public void setNumberPoints(int numberPoints) {
-        sn.setNumberPoints(numberPoints);
+    public void setNumberTrees(int numberTrees) {
+        sn.setNumberTrees(numberTrees);
         setChanged();
         notifyObservers();
     }

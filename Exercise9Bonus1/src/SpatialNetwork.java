@@ -1,4 +1,3 @@
-import java.awt.geom.Point2D;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -8,36 +7,38 @@ import java.util.Random;
  */
 public class SpatialNetwork {
 
-    private int numberPoints;
-    private double threshold;
-    private ArrayList<Point2D.Double> points;
+    private int numberTrees;
+    private double threshold, initial, infect;
+    private ArrayList<Tree> trees;
 
     /**
-     * Create new network with the given number of points and given threshold
+     * Create new network with the given number of trees and given threshold
      *
-     * @param numberPoints number of nodes in the network
-     * @param threshold    threshold under which points are said to be connected
+     * @param numberTrees number of nodes in the network
+     * @param threshold    threshold under which trees are said to be connected
      */
-    public SpatialNetwork(int numberPoints, double threshold) {
-        this.numberPoints = numberPoints;
+    public SpatialNetwork(int numberTrees, double threshold, double initial, double infect) {
+        this.numberTrees = numberTrees;
         this.threshold = threshold;
-        points = new ArrayList<>();
-        initPoints();
+        this.initial = initial;
+        this.infect = infect;
+        trees = new ArrayList<>();
+        initTrees();
     }
 
     /**
      * Initialise the node positions
      */
-    public void initPoints() {
+    public void initTrees() {
         Random rand = new Random();
-        points.clear();
+        trees.clear();
         for (int i = 0; i < 200; i++) {
-            points.add(new Point2D.Double(rand.nextDouble(), rand.nextDouble()));
+            trees.add(new Tree(rand.nextDouble(), rand.nextDouble(), rand.nextDouble() < initial));
         }
     }
 
     /**
-     * Check if two points are closer together than the threshold and thus connected
+     * Check if two trees are closer together than the threshold and thus connected
      *
      * @param ox origin x coord
      * @param oy origin y coord
@@ -49,13 +50,32 @@ public class SpatialNetwork {
         return Math.sqrt(Math.pow(dx - ox, 2) + Math.pow(dy - oy, 2)) < threshold;
     }
 
+    public void simulateDay() {
+        Random rand = new Random();
+        System.out.println(trees.size());
+        for (Tree tree : trees) {
+            double x = tree.getX();
+            double y = tree.getY();
+
+            for (Tree destTree : trees) {
+                double dx = destTree.getX();
+                double dy = destTree.getY();
+
+                // if trees are connected and one is and one isn't then infect other
+                if (areConnected(x, y, dx, dy) && !tree.isInfected() && destTree.isInfected() && rand.nextDouble() < infect) {
+                    tree.setInfected(true);
+                }
+            }
+        }
+    }
+
     /**
      * Return number of nodes
      *
      * @return number of nodes
      */
-    public int getNumberPoints() {
-        return numberPoints;
+    public int getNumberTrees() {
+        return numberTrees;
     }
 
     /**
@@ -72,17 +92,17 @@ public class SpatialNetwork {
      *
      * @return list of nodes
      */
-    public ArrayList<Point2D.Double> getPoints() {
-        return points;
+    public ArrayList<Tree> getTrees() {
+        return trees;
     }
 
     /**
      * Set the number of nodes
      *
-     * @param numberPoints new number of nodes
+     * @param numberTrees new number of nodes
      */
-    public void setNumberPoints(int numberPoints) {
-        this.numberPoints = numberPoints;
+    public void setNumberTrees(int numberTrees) {
+        this.numberTrees = numberTrees;
     }
 
     /**
