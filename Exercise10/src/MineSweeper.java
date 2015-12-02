@@ -15,7 +15,7 @@ public class MineSweeper {
     private int difficulty;
     private int[][] board;
     private boolean[][] revealed;
-    private boolean playing;
+    private boolean playerWon, playing;
 
     public MineSweeper(int boardSize) {
         this.boardSize = boardSize;
@@ -27,6 +27,7 @@ public class MineSweeper {
 
     private void initBoard() {
         playing = true;
+        playerWon = false;
         for (int i = 0; i < boardSize; i++) {
             for (int j = 0; j < boardSize; j++) {
                 board[i][j] = BLANK;
@@ -51,9 +52,11 @@ public class MineSweeper {
     public void click(int i, int j) {
         if (!revealed[i][j]) {
             revealed[i][j] = true;
-            if (board[i][j] == MINE) {
+            if (board[i][j] == MINE) { // Player lost
                 playing = false;
-                revealAll();
+                revealMines();
+            } else { // Player still going
+                checkWin();
             }
         } else {
             throw new IllegalArgumentException("Board already revealed at (" + i + ", " + j + ")");
@@ -68,6 +71,32 @@ public class MineSweeper {
         }
     }
 
+    private void revealMines() {
+        for (int i = 0; i < boardSize; i++) {
+            for (int j = 0; j < boardSize; j++) {
+                revealed[i][j] = get(i, j) == MINE;
+            }
+        }
+    }
+
+    private void checkWin() {
+        int remain = boardSize ^ 2 - difficulty;
+        for (int i = 0; i < boardSize; i++) {
+            for (int j = 0; j < boardSize; j++) {
+                if (isRevealed(i, j) && get(i, j) == BLANK) {
+                    remain--;
+                }
+            }
+        }
+        System.out.println(remain);
+        if (remain == 0) {
+            playerWon = true;
+            playing = false;
+            revealAll();
+        }
+    }
+
+    // TODO Implement
     public int getLabel(int i, int j) {
         return 0;
     }
@@ -86,6 +115,10 @@ public class MineSweeper {
 
     public boolean isPlaying() {
         return playing;
+    }
+
+    public int getBoardSize() {
+        return boardSize;
     }
 
     public void setDifficulty(int difficulty) {

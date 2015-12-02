@@ -14,10 +14,14 @@ public class MineModel extends Observable {
 
     public void click(int i, int j) {
         ms.click(i, j);
+        setChanged();
+        notifyObservers();
     }
 
     public void newGame() {
         ms.newGame();
+        setChanged();
+        notifyObservers();
     }
 
     public int get(int i, int j) {
@@ -32,8 +36,14 @@ public class MineModel extends Observable {
         return ms.isPlaying();
     }
 
+    public int getBoardSize() {
+        return ms.getBoardSize();
+    }
+
     public void setDifficulty(int difficulty) {
         ms.setDifficulty(difficulty);
+        setChanged();
+        notifyObservers();
     }
 
 }

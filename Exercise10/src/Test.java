@@ -4,6 +4,10 @@
 public class Test {
 
     public static void main(String[] args) {
+        Test test = new Test();
+    }
+
+    public Test() {
         int boardSize = 10;
 
         MineSweeper ms = new MineSweeper(boardSize);
@@ -33,6 +37,19 @@ public class Test {
         System.out.println(model.get(2, 9));
         System.out.println(model.get(7, 6));
         System.out.println(model.get(5, 4));
+
+        System.out.println();
+
+        // Test setDifficulty and thus newGame, use 20 manually because can't reference non-static constants from static context of main method
+        model.setDifficulty(20);
+
+        // Reprint after changing difficulty to hard (20 mines)
+        for (int i = 0; i < boardSize; i++) {
+            for (int j = 0; j < boardSize; j++) {
+                System.out.print(model.get(i, j) + " ");
+            }
+            System.out.println();
+        }
     }
 
 }
