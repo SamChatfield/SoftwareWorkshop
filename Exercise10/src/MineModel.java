@@ -24,8 +24,22 @@ public class MineModel extends Observable {
         notifyObservers();
     }
 
+    public void revealMines() {
+        ms.revealMines();
+        setChanged();
+        notifyObservers();
+    }
+
+    public String getLabel(int i, int j) {
+        return ms.getLabel(i, j);
+    }
+
     public int get(int i, int j) {
         return ms.get(i, j);
+    }
+
+    public int getDifficulty() {
+        return ms.getDifficulty();
     }
 
     public boolean isRevealed(int i, int j) {
@@ -36,6 +50,14 @@ public class MineModel extends Observable {
         return ms.isPlaying();
     }
 
+    public boolean hasPlayerWon() {
+        return ms.hasPlayerWon();
+    }
+
+    public boolean hasRestarted() {
+        return ms.hasRestarted();
+    }
+
     public int getBoardSize() {
         return ms.getBoardSize();
     }
@@ -44,6 +66,10 @@ public class MineModel extends Observable {
         ms.setDifficulty(difficulty);
         setChanged();
         notifyObservers();
+    }
+
+    public void setRestarted(boolean restarted) {
+        ms.setRestarted(restarted);
     }
 
 }

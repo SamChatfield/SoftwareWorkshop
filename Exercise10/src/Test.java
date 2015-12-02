@@ -10,7 +10,7 @@ public class Test {
     public Test() {
         int boardSize = 10;
 
-        MineSweeper ms = new MineSweeper(boardSize);
+        MineSweeper ms = new MineSweeper(boardSize, MineSweeper.EASY);
         MineModel model = new MineModel(ms);
 
         // Test constructor of board with mines
@@ -40,8 +40,8 @@ public class Test {
 
         System.out.println();
 
-        // Test setDifficulty and thus newGame, use 20 manually because can't reference non-static constants from static context of main method
-        model.setDifficulty(20);
+        // Test setDifficulty and thus newGame
+        model.setDifficulty(MineSweeper.HARD);
 
         // Reprint after changing difficulty to hard (20 mines)
         for (int i = 0; i < boardSize; i++) {

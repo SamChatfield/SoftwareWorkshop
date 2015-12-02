@@ -11,13 +11,13 @@ public class MineComponent extends JPanel {
 
         MineModel model = new MineModel(ms);
         BoardView view = new BoardView(model);
-        // TODO Control panel
+        ControlPanel controlPanel = new ControlPanel(model);
 
         model.addObserver(view);
 
         setLayout(new BorderLayout());
         add(view, BorderLayout.CENTER);
-        // TODO add Control panel SOUTH
+        add(controlPanel, BorderLayout.SOUTH);
     }
 
 }
