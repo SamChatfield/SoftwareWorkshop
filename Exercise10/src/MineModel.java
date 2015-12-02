@@ -54,8 +54,8 @@ public class MineModel extends Observable {
         return ms.hasPlayerWon();
     }
 
-    public boolean hasRestarted() {
-        return ms.hasRestarted();
+    public boolean isRevealPressed() {
+        return ms.isRevealPressed();
     }
 
     public int getBoardSize() {
@@ -69,7 +69,7 @@ public class MineModel extends Observable {
     }
 
     public void setRestarted(boolean restarted) {
-        ms.setRestarted(restarted);
+        ms.setRevealPressed(restarted);
     }
 
 }

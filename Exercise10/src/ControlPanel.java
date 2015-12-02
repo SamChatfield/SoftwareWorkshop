@@ -13,11 +13,11 @@ public class ControlPanel extends JPanel {
         JButton revealMines = new JButton("Reveal Mines");
 
         exit.addActionListener(e -> System.exit(0));
-        restart.addActionListener(e -> {
-            model.newGame();
+        restart.addActionListener(e -> model.newGame());
+        revealMines.addActionListener(e -> {
+            model.revealMines();
             model.setRestarted(true);
         });
-        revealMines.addActionListener(e -> model.revealMines());
 
         ButtonGroup diffGroup = new ButtonGroup();
         JRadioButton easy = new JRadioButton("Easy");

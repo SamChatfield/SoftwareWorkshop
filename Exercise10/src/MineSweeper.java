@@ -15,7 +15,7 @@ public class MineSweeper {
     private int difficulty;
     private int[][] board;
     private boolean[][] revealed;
-    private boolean playerWon, playing, restarted;
+    private boolean playerWon, playing, revealPressed;
 
     public MineSweeper(int boardSize, int difficulty) {
         this.boardSize = boardSize;
@@ -29,7 +29,7 @@ public class MineSweeper {
         System.out.println("initBoard");
         playing = true;
         playerWon = false;
-        restarted = false;
+        revealPressed = false;
         for (int i = 0; i < boardSize; i++) {
             for (int j = 0; j < boardSize; j++) {
                 board[i][j] = BLANK;
@@ -64,7 +64,29 @@ public class MineSweeper {
             }
         } else {
             throw new IllegalArgumentException("Board already revealed at (" + i + ", " + j + ")");
+        }
+    }
+
+    private int countAdjMines(int i, int j) {
+        int mines = 0;
+        for (int x = -1; x <= 1; x++) {
+            for (int y = -1; y <= 1; y++) {
+                // Catch case where i+x or j+y is outside array and simply continue looping since no mines outside minefield
+                try {
+                    mines += get(i + x, j + y);
+                } catch (ArrayIndexOutOfBoundsException e) {
+                }
             }
+        }
+        return mines;
+    }
+
+    public String getLabel(int i, int j) {
+        if (get(i, j) == MINE) {
+            return "XX";
+        }
+        int mines = countAdjMines(i, j);
+        return (mines == 0) ? "" : Integer.toString(mines);
     }
 
     private void revealAll() {
@@ -81,9 +103,11 @@ public class MineSweeper {
         for (int i = 0; i < boardSize; i++) {
             for (int j = 0; j < boardSize; j++) {
                 revealed[i][j] = get(i, j) == MINE;
+                System.out.println(i + ", " + j);
             }
         }
         playing = false;
+        revealPressed = true;
     }
 
     private void checkWin() {
@@ -101,25 +125,6 @@ public class MineSweeper {
             playerWon = true;
             playing = false;
             revealAll();
-        }
-    }
-
-    public String getLabel(int i, int j) {
-        System.out.println("getLabel");
-        if (get(i, j) == MINE) {
-            return "XX";
-        } else {
-            int label = 0;
-            for (int x = -1; x <= 1; x++) {
-                for (int y = -1; y <= 1; y++) {
-                    // Catch case where i+x or j+y is outside array and simply continue looping since no mines outside minefield
-                    try {
-                        label += get(i + x, j + y);
-                    } catch (ArrayIndexOutOfBoundsException e) {
-                    }
-                }
-            }
-            return (label == 0) ? "" : Integer.toString(label);
         }
     }
 
@@ -148,8 +153,8 @@ public class MineSweeper {
         return playerWon;
     }
 
-    public boolean hasRestarted() {
-        return restarted;
+    public boolean isRevealPressed() {
+        return revealPressed;
     }
 
     public int getBoardSize() {
@@ -161,7 +166,7 @@ public class MineSweeper {
         newGame();
     }
 
-    public void setRestarted(boolean restarted) {
-        this.restarted = restarted;
+    public void setRevealPressed(boolean revealPressed) {
+        this.revealPressed = revealPressed;
     }
 }

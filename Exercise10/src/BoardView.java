@@ -52,9 +52,9 @@ public class BoardView extends JPanel implements Observer {
         }
 
         // Check for win or loss
-        if (!model.isPlaying() && !model.hasPlayerWon() && !model.hasRestarted()) {
+        if (!model.isPlaying() && !model.hasPlayerWon() && !model.isRevealPressed()) {
             JOptionPane.showMessageDialog(this, "You lose!\nPress restart to try again.");
-        } else if (model.hasPlayerWon() && !model.isPlaying() && !model.hasRestarted()) {
+        } else if (model.hasPlayerWon() && !model.isPlaying() && !model.isRevealPressed()) {
             JOptionPane.showMessageDialog(this, "Congratulations, you win!\nPress restart to play again.");
         }
 
