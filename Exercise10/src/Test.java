@@ -1,4 +1,6 @@
 /**
+ * Test class for before GUI implemented. Test methods created up until that point. See individual comments below
+ *
  * Created by Sam on 02/12/2015.
  */
 public class Test {
@@ -33,7 +35,7 @@ public class Test {
 
         System.out.println();
 
-        // Test get method (run it enough times and a 1 will appear)
+        // Test get method on some arbitrary positions (run it enough times and a 1 will appear)
         System.out.println(model.get(2, 9));
         System.out.println(model.get(7, 6));
         System.out.println(model.get(5, 4));

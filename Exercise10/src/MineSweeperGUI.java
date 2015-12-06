@@ -1,6 +1,8 @@
 import javax.swing.*;
 
 /**
+ * The overall window for the game containing the JFrame onto which the overall component is added. Create the game logic and component
+ *
  * Created by Sam on 02/12/2015.
  */
 public class MineSweeperGUI {
