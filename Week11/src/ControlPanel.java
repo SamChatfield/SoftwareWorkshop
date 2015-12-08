@@ -1,7 +1,6 @@
 import javax.swing.*;
 
 public class ControlPanel extends JPanel {
-    private JuliaModel model;
     private JSlider aSlider;
     private JSlider bSlider;
 
@@ -10,23 +9,21 @@ public class ControlPanel extends JPanel {
      *
      * @param model MineModel object
      */
-    public ControlPanel(JuliaModel model, int min, int max, int initial) {
+    public ControlPanel(JuliaModel model) {
         super();
-        this.model = model;
-        aSlider = new JSlider(min, max, initial);
+        aSlider = new JSlider(-100, 100, (int) (model.getA() * 100));
         aSlider.setPaintTicks(true);
-        aSlider.setMajorTickSpacing((max - min) / 5);
+        aSlider.setMajorTickSpacing(50);
         aSlider.setPaintLabels(true);
-        aSlider.setLabelTable(aSlider.createStandardLabels((max - min) / 5));
-        aSlider.addChangeListener(e -> model.setA(aSlider.getValue() / ((max - min) / 2) - 1));
+        aSlider.setLabelTable(aSlider.createStandardLabels(50));
+        aSlider.addChangeListener(e -> model.setA((double) aSlider.getValue() / 100));
 
-        bSlider = new JSlider(min, max, initial);
+        bSlider = new JSlider(-100, 100, (int) (model.getB() * 100));
         bSlider.setPaintTicks(true);
-        bSlider.setMajorTickSpacing((max - min) / 5);
+        bSlider.setMajorTickSpacing(50);
         bSlider.setPaintLabels(true);
-        bSlider.setLabelTable(bSlider.createStandardLabels((max - min) / 5));
-        bSlider.addChangeListener(e -> model.setB(bSlider.getValue() / ((max - min) / 2) - 1));
-
+        bSlider.setLabelTable(bSlider.createStandardLabels(50));
+        bSlider.addChangeListener(e -> model.setB((double) bSlider.getValue() / 100));
 
         add(aSlider);
         add(bSlider);

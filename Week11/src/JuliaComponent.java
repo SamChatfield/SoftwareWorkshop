@@ -6,16 +6,12 @@ import java.awt.*;
  */
 public class JuliaComponent extends JPanel {
 
-    private int min;
-    private int max;
-    private int initial;
-
     /**
      * Combine the views
      *
      * @param j Julia object
      */
-    public JuliaComponent(JuliaSet j, int min, int max, int initial) {
+    public JuliaComponent(JuliaSet j) {
         super();
 
         // make model
@@ -23,7 +19,7 @@ public class JuliaComponent extends JPanel {
 
         // make views
         JuliaView set = new JuliaView(model);
-        ControlPanel controls = new ControlPanel(model, min, max, initial);
+        ControlPanel controls = new ControlPanel(model);
 
         // make model observe view
         model.addObserver(set);
