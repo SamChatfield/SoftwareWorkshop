@@ -12,4 +12,6 @@
 hs_err_pid*
 
 *.html
+*.js
+*.css
 .DS_Store
